@@ -1,4 +1,4 @@
-/* Eure Markenfarben */
+/* Markenfarben */
 .my-nav-color {
     background-color: #203952 !important;
 }
@@ -8,13 +8,13 @@
     font-weight: bold;
 }
 
-/* Verhindert den Standard-Hover-Effekt, damit die Goldfarbe bleibt */
+/* Verhindert den Standard-Hover-Effekt */
 .w3-bar-item.w3-button:hover {
-    background-color: #2a4a6a !important; /* Etwas helleres Blau */
+    background-color: #2a4a6a !important; /* für den Hover Effekt */
     color: #EDC353 !important;
 }
 
-/* Optionale Schriftart, falls ihr wollt */
+/* Standartschrift */
 body {
     font-family: "Segoe UI", Arial, sans-serif;
 }
