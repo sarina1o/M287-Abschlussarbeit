@@ -102,6 +102,70 @@
         </div>
         </div>
     </main>
+    <!--FAQ-Bereich (Accordion)-->
+    <section class="w3-container w3-content w3-padding-64" style="max-width:1000px">
+
+        <h2 class="w3-center w3-text-dark-grey"><b>Fragen zum Wachwerden? ⚡</b></h2>
+        <p class="w3-center w3-opacity w3-margin-bottom">Alles, was ihr über uns und unseren Lieblings-Mate wissen
+            müsst.</p>
+
+        <div class="w3-card w3-round-large w3-margin-bottom">
+            <button onclick="toggleAccordion('faq1')"
+                class="w3-button w3-block w3-left-align w3-white w3-hover-light-grey w3-padding-16 w3-round-large">
+                <b class="my-nav-text">01.</b> Ist El Tony Mate eigentlich vegan?
+            </button>
+            <div id="faq1" class="w3-hide w3-container w3-padding-24 w3-light-grey w3-animate-opacity">
+                <p>Aber hallo! El Tony Mate ist zu 100% vegan. Keine tierischen Inhaltsstoffe, nur pure Energie aus
+                    frisch aufgebrühtem Mate-Tee, Bio-Rohrzucker und einem Spritzer Zitrone.</p>
+            </div>
+        </div>
+
+        <div class="w3-card w3-round-large w3-margin-bottom">
+            <button onclick="toggleAccordion('faq2')"
+                class="w3-button w3-block w3-left-align w3-white w3-hover-light-grey w3-padding-16 w3-round-large">
+                <b class="my-nav-text">02.</b> Wer sind die kreativen Köpfe hinter dieser Seite?
+            </button>
+            <div id="faq2" class="w3-hide w3-container w3-padding-24 w3-light-grey w3-animate-opacity">
+                <p>Das sind wir: <b>Sarina Bachmann und Ria Ottiger!</b> Wir befinden uns im 1. Lehrjahr als
+                    Mediamatikerinnen. Diese Seite ist unser Herzensprojekt.</p>
+            </div>
+        </div>
+
+        <div class="w3-card w3-round-large w3-margin-bottom">
+            <button onclick="toggleAccordion('faq3')"
+                class="w3-button w3-block w3-left-align w3-white w3-hover-light-grey w3-padding-16 w3-round-large">
+                <b class="my-nav-text">03.</b> Woher kommt der Mate-Tee für El Tony?
+            </button>
+            <div id="faq3" class="w3-hide w3-container w3-padding-24 w3-light-grey w3-animate-opacity">
+                <p>Die Mate-Blätter stammen aus nachhaltigem Anbau in Südamerika (Paraguay). Dort wird der Mate nach
+                    traditioneller Art geerntet und in der Schweiz kalt aufgebrüht.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        // Diese Funktion steuert das Auf- und Zuklappen der FAQ-Elemente
+        function toggleAccordion(id) {
+            // 1. Das Element anhand der übergebenen ID finden
+            var x = document.getElementById(id);
+
+            // 2. Prüfen, ob das Element die Klasse 'w3-show' bereits hat (ob es offen ist)
+            if (x.className.indexOf("w3-show") == -1) {
+                // 3. Wenn NICHT offen: Klasse hinzufügen, um es anzuzeigen
+                x.className += " w3-show";
+                // Visuelles Feedback: Den Button-Hintergrund auf Grau ändern
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace("w3-white", "w3-light-grey");
+            } else {
+                // 4. Wenn bereits offen: Klasse entfernen, um es zu verstecken
+                x.className = x.className.replace(" w3-show", "");
+                // Visuelles Feedback: Den Button-Hintergrund zurück auf Weiss setzen
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace("w3-light-grey", "w3-white");
+            }
+        }
+    </script>
 
 
 </body>
