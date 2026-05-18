@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!--Navigation-->
     <nav class="w3-bar my-nav-color w3-card-4">
         <div class="w3-content" style="max-width:1200px">
             <a href="../index.html" class="w3-bar-item w3-button w3-mobile my-nav-text">Home</a>
@@ -22,8 +23,116 @@
         </div>
     </nav>
 
-</body>
+<!--Einleitungstext-->
+    <header class="w3-container w3-content w3-padding-64" style="max-width:800px">
+        <h1 class="w3-center w3-text-dark-grey"><b>The New Era of Energy</b></h1>
+        <p class="w3-center w3-large">
+            Vergesst alles, was ihr bisher über Mate wusstet. Als Mediamatikerinnen haben wir nicht nur Code
+            geschrieben,
+            sondern drei exklusive El Tony Flavors entworfen, die Design und Geschmack vereinen.
+            <b>Entdeckt unsere Limited Editions!</b>
+        </p>
+    </header>
 
+    <main class="w3-content" style="max-width:1100px">
+
+        <div class="w3-row-padding">
+            <!--Berry & Açaí Karte-->
+
+            <div class="w3-col s6 l6 w3-margin-bottom">
+                <div class="w3-card-4 w3-round-large w3-white w3-center">
+                    <img src="../img/flavor_brombeere&açaí .png" alt="Berry & Açaí" style="width:100%" class="w3-round-large">
+                    <div class="w3-container">
+                        <h4 class="w3-text-purple"><b>Berry & Açaí</b></h4>
+                        <button onclick="document.getElementById('modal1').style.display='block'"
+                            class="w3-button w3-purple w3-round w3-margin-bottom w3-small">Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-col s6 l6 w3-margin-bottom">
+                <div class="w3-card-4 w3-round-large w3-white w3-center">
+                    <img src="../img/flavor_yuzu-zitrone&ingwer.png" alt="Yuzu-Zitrone & Ingwer" style="width:100%" class="w3-round-large">
+                    <div class="w3-container">
+                        <h4 class="w3-text-lime"><b>Yuzu-Zitrone & Ingwer</b></h4>
+                        <button onclick="document.getElementById('modal2').style.display='block'"
+                            class="w3-button w3-lime w3-round w3-margin-bottom w3-small">Details</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="w3-row-padding">
+            <div class="w3-col s6 l6 w3-margin-bottom">
+                <div class="w3-card-4 w3-round-large w3-white w3-center">
+                    <img src="../img/flavor_drachenfrucht&mango.png" alt="Drachenfrucht & Mango" style="width:100%" class="w3-round-large">
+                    <div class="w3-container">
+                        <h4 class="w3-text-pink"><b>Drachenfrucht & Mango</b></h4>
+                        <button onclick="document.getElementById('modal3').style.display='block'"
+                            class="w3-button w3-pink w3-round w3-margin-bottom w3-small">Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-col s6 l6 w3-margin-bottom">
+                <div class="w3-container w3-pale-yellow w3-round-large w3-center"
+                    style="height: 100%; border: 2px dashed #EDC353;">
+                    <p class="w3-padding-32"><b>Wunsch-Flavor?</b><br>Schreibt uns eure Ideen für die nächste Edition!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="w3-container w3-padding-64">
+        <div class="w3-display-container w3-round-xlarge w3-card-4" style="height:400px; overflow:hidden;">
+            <img src="../img/sport_banner.jpg" alt="Lifestyle"
+                style="width:100%; height:100%; object-fit:cover; filter: brightness(0.6);">
+
+            <div class="w3-display-middle w3-center">
+                <h2 class="w3-text-white w3-xxlarge w3-animate-top"><b>NEVER SLEEP.</b></h2>
+                <hr class="w3-border-amber" style="width:100%; margin:auto;">
+                <p class="w3-text-white w3-xlarge">Designed by Sarina & Ria</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal1" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-round-large">
+            <div class="w3-container w3-purple w3-round-large">
+                <span onclick="document.getElementById('modal1').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <h3>Berry & Açaí</h3>
+                <p>Frisch aufgebrühter Mate kombiniert mit wilden Brombeeren und Açaí-Extrakt. Perfekt für
+                    Coding-Sessions bis 3 Uhr morgens.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-round-large">
+            <div class="w3-container w3-lime w3-round-large">
+                <span onclick="document.getElementById('modal2').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <h3>Yuzu-Zitrone & Ingwer</h3>
+                <p>Japanische Yuzu-Zitrone trifft auf scharfen Ingwer. Ein explosiver Mix, der deine Synapsen zum Feuern
+                    bringt.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-round-large">
+            <div class="w3-container w3-pink w3-round-large">
+                <span onclick="document.getElementById('modal3').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <h3>Drachenfrucht & Mango</h3>
+                <p>Süße Drachenfrucht und sonnengereifte Mango. Hol dir den Urlaub direkt in die Dose, egal wo du bist.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
 <footer class="w3-container w3-padding-64 w3-center my-nav-color">
     <div class="w3-content" style="max-width:1200px">
         <div class="w3-row-padding">
