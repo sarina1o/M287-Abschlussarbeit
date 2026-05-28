@@ -18,3 +18,11 @@
 body {
     font-family: "Segoe UI", Arial, sans-serif;
 }
+
+/* Ergänzung für die W3.CSS Parallax-Klasse */
+.w3-parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
